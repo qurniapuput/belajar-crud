@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            table
+        </title>
+        <style>
+            body {background-color: rgb(16, 184, 206);}
+            h3   {color: blue;}
+            p    {color: red;}
+
+            #myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+
+            .myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+                font-family: verdana;
+            }
+
+            .aku {
+                background-color: rgb(224, 231, 234);
+                color: black;
+                padding: 40px;
+                text-align: left;
+                font-family: verdana;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Ini tabel</h3>
+        <h4 id="myHeader">header saya</h4>
+        <p>deskripsi tabel</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th class="myHeader">No</th>
+                    <th class="myHeader">Nama</th>
+                    <th class="myHeader">Alamat</th>
+                    <th colspan="2" class="myHeader">No Telp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="aku">Puput</td>
+                    <td class="myHeader">Ngrobyong</td>
+                    <td colspan="2" rowspan="3"><img src="1.png" width="300"/></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td>fahmi</td>
+                    <td>Ngawi</td>
+                </tr>
+                <tr>
+                    <td>fahmi</td>
+                    <td>Ngawi</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+
+        <table border="1">
+            <tr>
+                <td rowspan="2">1<br>2</td>
+                <td colspan="2">Puput Ngrobyong</td>
+            </tr>
+            <tr>
+                <td>fahmi</td>
+                <td rowspan="2">Ngawi<br>Ngawi2</td>
+            </tr>
+            <tr>
+                <td colspan="2">3 fahmi2</td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>
